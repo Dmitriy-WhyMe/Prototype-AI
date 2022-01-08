@@ -33,63 +33,37 @@
             <input type="text" placeholder="Input iterations...." name="iterations"><br>
             <button class="center-align btn waves-effect waves-light">Submit</button>
         </form>
+        
         <div id=myOutput></div>
-        <div class="wait">Please wait...</div>
 
+        <div class="wait">Please wait...</div>
 
         <h4 class="section-learning flow-text">
             <div class="learning-counter" id="learning-counter"></div>
         </h4>
+
         <div class="row main">
-            <h3>Обучение AI</h3>
+            <h4 class="center-align">Обучение AI(В разработке)</h4>
             <form class="col s12">
-              <div class="row">
-                <div class="input-field col s5">
-                  <label>key</label>
-                  <input type="text" value="1" required>
+                <div class="row">
+                    <div class="input-field col s5">
+                    <label>key</label>
+                    <input type="text" value="1" required>
+                    </div>
+                    <div class="input-field col s2">
+                    <p>:</p>
+                    </div>
+                    <div class="input-field col s5">
+                    <label>value</label>
+                    <input type="text" value="foo" required>
+                    </div>
                 </div>
-                <div class="input-field col s2">
-                  <p>:</p>
+        
+                <div class="row center-align">
+                    <button class="btn waves-effect waves-light create-json">create json
+                    <i class="material-icons right">send</i>
+                    </button>
                 </div>
-                <div class="input-field col s5">
-                  <label>value</label>
-                  <input type="text" value="foo" required>
-                </div>
-              </div>
-          
-              <div class="row">
-                <div class="input-field col s5">
-                  <label>key</label>
-                  <input type="text" value="2" required>
-                </div>
-                <div class="input-field col s2">
-                  <p>:</p>
-                </div>
-                <div class="input-field col s5">
-                  <label>value</label>
-                  <input type="text" value="bar" required>
-                </div>
-              </div>
-          
-              <div class="row">
-                <div class="input-field col s5">
-                  <label>key</label>
-                  <input type="text" value="3" required>
-                </div>
-                <div class="input-field col s2">
-                  <p>:</p>
-                </div>
-                <div class="input-field col s5">
-                  <label>value</label>
-                  <input type="text" value="baz" required>
-                </div>
-              </div>
-          
-              <div class="row center-align">
-                <button class="btn waves-effect waves-light create-json">create json
-                  <i class="material-icons right">send</i>
-                </button>
-              </div>
             </form>
         </div>
         <script src="brain.js"></script>
