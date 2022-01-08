@@ -1,5 +1,13 @@
 $(document).ready(function() {
     let form = document.querySelector(".my-form");
+
+    //Вывод количества данных в базе
+    let mydata = JSON.parse(data);
+    let length_json = Object.keys(mydata).length;
+    const learningCounter = document.querySelector('#learning-counter');
+    learningCounter.innerHTML = ("В данный момент в базе находится: " + length_json + " фраз");
+    
+
     form.addEventListener("submit", function (e) {
         //Получение данных ввода с html
         e.preventDefault() // This prevents the window from reloading
@@ -15,6 +23,9 @@ $(document).ready(function() {
         let key_input = 'input';
         let key_output = 'output';
         let counter = 0;
+
+        //Добавление данных в AI
+        data.push({"input":"checkbox_5","output":"true"});
         
         //Получение данных из Json файла
         while (counter < length_json) {
