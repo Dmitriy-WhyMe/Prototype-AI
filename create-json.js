@@ -27,14 +27,4 @@ document.querySelector(".create-json").addEventListener("click",(ev) => {
 },
 { once: true }
 );
-
-document.querySelector(".get-data").addEventListener("click", () => {
-    (async () => {
-        const response = await fetch("https://harryheman.github.io/Work-With-Files-in-JavaScript/Create-JSON/data.json");
-
-        const data = await response.json();
-
-        console.table(data);
-    })();
-});
   
