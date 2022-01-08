@@ -1,0 +1,20 @@
+{
+  "name": "my-ai",
+  "version": "1.2.0",
+  "description": "MyAI",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AI",
+    "Machine Learning"
+  ],
+  "author": "WhyMe",
+  "license": "Mint",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}

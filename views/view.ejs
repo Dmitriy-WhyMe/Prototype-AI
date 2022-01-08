@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('blocks/head.ejs') %>
+<body>
+    <%- include('blocks/menu.ejs') %>
+    <h1>Список записей в файле Json:</h1>
+    <table>
+        <tr>
+            <td>№</td>
+            <td>input</td>
+            <td>output</td>
+        </tr>
+        <% for(let i=0; i<data.length; i++) { %>
+        <tr>
+            <td><%= (i+1) %></td>
+            <td><%= data[i]['input'] %></td>
+            <td><%= data[i]['output'] %></td>
+        </tr>
+        <% } %>
+    </table>
+    <%- include('blocks/scripts.ejs') %>
+</body>
+</html>
