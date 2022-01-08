@@ -10,7 +10,7 @@ app.use('/public', express.static('public'));
 
 //Readin is file
 let file = fs.readFileSync('AI.json', 'utf8');
-let jsObjectFilms = JSON.parse(file);
+let jsObjectAi = JSON.parse(file);
 
 //Form
 app.post('/add', urlencodeParser, function(req, res) {
@@ -38,7 +38,7 @@ app.get('/:name', function(req, res) {
     if(req.params.name === 'add') {
         res.render('add');
     } else if(req.params.name === 'view') {
-        res.render('view', {data: jsObjectFilms});
+        res.render('view', {data: jsObjectAi});
     } else if(req.params.name === 'test') {
         res.render('test');
     } else {
