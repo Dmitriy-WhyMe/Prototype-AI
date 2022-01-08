@@ -42,7 +42,7 @@ function prototype() {
         console.log(obj);
         if (counter == length_json) {
             net.train(big_data, {
-                iterations: 500,
+                iterations: 2500,
                 log: details => console.log(details),
                 errorThresh: 0.011
             });
@@ -50,10 +50,6 @@ function prototype() {
     }
     
     console.log(big_data);
-
-
-    
-   
 
     output = net.run('700 Рублей');
     const myOutput = document.querySelector('#myOutput');
