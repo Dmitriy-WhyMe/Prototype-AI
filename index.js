@@ -44,16 +44,16 @@ function prototype() {
     }
 
     net.train(big_data, {
-        iterations: 500,
+        iterations: 2500,
         log: details => console.log(details),
         errorThresh: 0.011
     });
     console.log(big_data);
 
-    output = net.run('700 Рублей');
+    output = net.run('3500 Рублей');
     const myOutput = document.querySelector('#myOutput');
     myOutput.innerHTML = ("Ответ: " + output);
-    
+
     console.log(output)
 }
   
