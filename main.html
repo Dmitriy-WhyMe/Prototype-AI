@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,15 +7,26 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        
+        
+        
+        
+        
+        <form class="my-form">
+            <div class="input-text">Введите сколько вам лет</div>
+            <div class="example">Пример:"Завтра мне исполнится 45 лет"</div>
+            <input type="text" placeholder="Input data...." name="data-text"><br>
+            <div class="input-iterations">Введите количество итераций обучения от 100</div>
+            <input type="text" placeholder="Input iterations...." name="iterations"><br>
+            <button>Submit</button>
+        </form>
+        <div id=myOutput></div>
         <div class="wait">Please wait...</div>
         <script src="brain.js"></script>
-        <div id=myOutput></div>
-        <script type="text/javascript" src="data.json"></script>
-        <script src="index.js" async defer></script>
+        <script src="data.json"></script>
+        <script src="index.js"></script>
     </body>
 </html>

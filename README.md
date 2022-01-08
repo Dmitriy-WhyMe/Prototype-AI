@@ -1,2 +1,2 @@
 The AI result can be viewed in the console, currently standing at 2500 iterations with an error margin of 0.011. I would like to point out that the AI is not yet fully trained and there may be errors.
-Version 1.0 Beta
+Version 1.1 Beta
