@@ -33,6 +33,7 @@ function prototype() {
     let key_input = 'input';
     let key_output = 'output';
     let counter = 0;
+
     while (counter < length_json) {
         let obj = {};
         obj[key_input] = mydata[counter].input;
@@ -40,20 +41,19 @@ function prototype() {
         big_data.push(obj);
         counter++;
         console.log(obj);
-        if (counter == length_json) {
-            net.train(big_data, {
-                iterations: 2500,
-                log: details => console.log(details),
-                errorThresh: 0.011
-            });
-        }
     }
-    
+
+    net.train(big_data, {
+        iterations: 500,
+        log: details => console.log(details),
+        errorThresh: 0.011
+    });
     console.log(big_data);
 
     output = net.run('700 Рублей');
     const myOutput = document.querySelector('#myOutput');
     myOutput.innerHTML = ("Ответ: " + output);
+    
     console.log(output)
 }
   
