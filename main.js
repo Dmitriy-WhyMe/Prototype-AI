@@ -12,6 +12,7 @@ app.use('/public', express.static('public'));
 let file = fs.readFileSync('AI.json', 'utf8');
 let jsObjectAi = JSON.parse(file);
 
+
 //Form
 app.post('/add', urlencodeParser, function(req, res) {
     if(!req.body) return res.sendStatus(400);
@@ -29,9 +30,9 @@ app.post('/add', urlencodeParser, function(req, res) {
 
 //Server
 app.listen(3000);
-
+var myVar = 1;
 app.get('/', function (req, res) {
-    res.render('test');
+    res.render('test_1', {data: jsObjectAi});
 });
 
 app.get('/:name', function(req, res) {
@@ -39,8 +40,8 @@ app.get('/:name', function(req, res) {
         res.render('add');
     } else if(req.params.name === 'view') {
         res.render('view', {data: jsObjectAi});
-    } else if(req.params.name === 'test') {
-        res.render('test');
+    } else if(req.params.name === 'test_1') {
+        res.render('test_1', {data: jsObjectAi});
     } else {
         res.sendFile(__dirname + '/404.html');
     }  
