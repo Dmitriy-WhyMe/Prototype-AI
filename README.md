@@ -2,7 +2,7 @@
 
 ## Инструкция:
 1. Склонировать репозиторий на свой компьютер с помощью 
-> git clone https://github.com/morphIsmail/films_json.git
+> git clone https://github.com/Dmitriy-WhyMe/Prototype-AI.git
 2. Открыть терминал
 3. Перейти в каталог где находится проект
 > cd ..  - выйти назад
